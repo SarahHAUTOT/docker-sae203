@@ -8,7 +8,11 @@ A un haut niveau, GitHub est un **site web et un service de cloud** qui aide les
 
 Créer en 2008, et maintenant appartenant à Microsoft, GitHub est devenue un outil connues.
 
+<<<<<<< HEAD
 <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="logo GitHub" width="50%" height="50%" title="Logo GitHub">
+=======
+<img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="logo GitHub" width="50%" height="50%">
+>>>>>>> e7a81c87503769ed29024d60e8d60259320e169f
 
 GitHub est une société à but lucratif qui offre un service d’hébergement de référentiel Git basé sur le cloud. Essentiellement, il est beaucoup plus facile pour les individus et les équipes d’utiliser Git pour le contrôle de version et la collaboration.
 
