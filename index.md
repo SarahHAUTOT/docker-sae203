@@ -8,6 +8,6 @@ A un haut niveau, GitHub est un **site web et un service de cloud** qui aide les
 
 Créer en 2008, et maintenant appartenant à Microsoft, GitHub est devenue un outil connues.
 
-![logo](https://fr.wikipedia.org/wiki/GitHub_(entreprise)#/media/Fichier:Font_Awesome_5_brands_github.svg)
+![logo](https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png)
 
 ## Dockeur, une machine virtuelle légère.
