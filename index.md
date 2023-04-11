@@ -14,7 +14,7 @@ GitHub est une société à but lucratif qui offre un service d’hébergement d
 
 De plus, n’importe qui peut s’inscrire et héberger gratuitement un dépôt de code public, ce qui rend GitHub particulièrement populaire auprès des projets open-source.
 
-Cliquer sur ce [lien](https://google.com) pour savoir comment utiliser Git !
+Cliquer sur ce [lien](./gitInfo.md) pour savoir comment utiliser Git !
 
 ## Dockeur, une machine virtuelle légère.
 
