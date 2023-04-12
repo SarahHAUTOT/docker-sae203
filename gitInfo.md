@@ -8,6 +8,22 @@ Il permet de stocker et de gérer l'historique des modifications apportées à d
 
 ***
 
+## Comment démarrer ?
+
+Afin de commencer à utiliser git, nous devons obtenir nos configurations qui contrôlent tous les domaines du fonctionnement et de l'apparence de git. La commande `git config` nous aidera dans cette tâche
+
+Pour obtenir toutes les configurations, nous avons besoin de la commande `git config --list`
+
+Si vous n'avez jamais utilisé de git avant, vous devrez définir certaines variables vous-même :
+
+1. Votre identité
+  1.1 Utilisez la commande `git config --global user.name "Nom Prenom"` pour assigner votre prénom et votre nom de famille à une variable
+  1.2 Utilisez `git config --global user.email ххх@example.com` pour assigner votre email à la variable
+2. Votre editeur 
+  2.1 Avec cette commande `git config --global core.editor XXXX` nous configurons notre éditeur de texte par défaut
+
+***
+
 ## Comment on enregistre nos fichiers ?
 Git fonctionne en enregistrant des "snapshots" de l'état du projet à chaque étape de son évolution. Ces snapshots sont appelés "commit" et contiennent des informations sur les modifications apportées aux fichiers. Git conserve une base de données de ces commits, permettant aux développeurs de suivre l'historique du projet et de revenir à des versions antérieures si nécessaire.
 
