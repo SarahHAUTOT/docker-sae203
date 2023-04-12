@@ -1,4 +1,4 @@
-### [GIT](#git)
+### GIT
 
 ## C'est quoi ?
 
@@ -33,8 +33,6 @@ Il est parfois nécessaire de copier un dépôt distant dans votre dépôt local
 
 `git clone git@github.com:<nom_de_utilisateur>/<nom_de_dépôt>.git`
 
-[Haut de la page](#git)
-
 ***
 
 ## Nouvelles fonctionnalités à l’aide des branches
@@ -52,7 +50,5 @@ Si vous voulez juste passer à une branche existante sans en créer une nouvelle
 Si vous voulez merger deux branches, par exemple, main et test, aller tous dabord sur la branche main puis tapper la commande : 
 
 `git merge test`
-
-[Haut de la page](#git)
 
 ***
