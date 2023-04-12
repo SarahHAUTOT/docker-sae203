@@ -8,6 +8,22 @@ Il permet de stocker et de gérer l'historique des modifications apportées à d
 
 ***
 
+## Comment démarrer ?
+
+Afin de commencer à utiliser git, nous devons obtenir nos configurations qui contrôlent tous les domaines du fonctionnement et de l'apparence de git. La commande `git config` nous aidera dans cette tâche
+
+Pour obtenir toutes les configurations, nous avons besoin de la commande `git config --list`
+
+Si vous n'avez jamais utilisé de git avant, vous devrez définir certaines variables vous-même :
+
+1. ***Votre identité***
+  - Utilisez la commande `git config --global user.name "Nom Prenom"` pour assigner votre prénom et votre nom de famille à une variable
+  - Utilisez `git config --global user.email ххх@example.com` pour assigner votre email à la variable
+2. ***Votre editeur*** 
+  - Avec cette commande `git config --global core.editor XXXX` nous configurons notre éditeur de texte par défaut
+
+***
+
 ## Comment on enregistre nos fichiers ?
 Git fonctionne en enregistrant des "snapshots" de l'état du projet à chaque étape de son évolution. Ces snapshots sont appelés "commit" et contiennent des informations sur les modifications apportées aux fichiers. Git conserve une base de données de ces commits, permettant aux développeurs de suivre l'historique du projet et de revenir à des versions antérieures si nécessaire.
 
@@ -46,12 +62,13 @@ La commande `git checkout -b <nom_de_branche>` avec le modificateur **-b** nous 
 Si vous voulez juste passer à une branche existante sans en créer une nouvelle, alors la commande `git checkout <nom_de_branche>` fera l'affaire.
 
 
-![remarque](https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Exclamation_yellow_flat_icon.svg/240px-Exclamation_yellow_flat_icon.svg.png){: style="float: left; width:8%; height:8%; "}
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Exclamation_yellow_flat_icon.svg/240px-Exclamation_yellow_flat_icon.svg.png" alt="Remarque!" title="Remarque!" style="float: left; width:7%; height:7%; margin: 0 5px; ">
 
 **Remarque : lorsque vous crée des fichier dans les branches (par exemple la branche nomBranche), ils ne seront pas visible par la branche main.**
 
 Si vous voulez merger deux branches, par exemple, main et test, aller tous dabord sur la branche main puis tapper la commande : 
-
 `git merge test`
 
 ***
+
+Cliquer sur ce [**lien**](./index.md) pour retour à la page d'accueil!
