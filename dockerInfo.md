@@ -148,3 +148,89 @@ Note : Sur windows, il se peut que la commande pwd ne fonctionne pas, à ce mome
 
 
 # TP2
+
+## Créer une image : Dockerfile
+Les paramètres et les instructions d’un dockerfile sont nombreux, nous n’allons donc pas tous les voir. 
+
+Au lieu de cela, nous allons travailler avec des exercices avec un ordre croissant de complexité qui nous permettront de découvrir progressivement comment créer notre propre dockerfile.
+
+Ci vous avez besoin de connaitre d'autre fonctionnalités, vous trouverez tous dans ce [manuel](https://docs.docker.com/engine/reference/builder/).
+
+
+### Premier docker file
+
+Pour construire une image, un fichier Dockerfile est crée avec les instructions qui précisent ce qui vas aller dans l'environnement, à l'intérieur du conteneur (résaux, volumes, ports vers l'éxterieurs, fichiers qui sont inclus). 
+
+Un fichier Dockerfile indique comment et avec construire l'image. Voici un exemple de fichier :
+
+```
+# Utiliser l'image httpd officielle comme image parent
+FROM httpd
+
+# Copier le répertoire html du répertoire courant vers le répertoire de l'image /usr/.../htdocs
+COPY ./html/ /usr/local/apache2/htdocs/
+
+# Exécuter la commande echo sur le conteneur 
+# (il peut s'agir de n'importe quelle autre commande)
+RUN echo 'Hello world! Voici notre premier dockerfile'
+
+
+# Rendre le port 80 accessible au monde en dehors de ce conteneur
+EXPOSE 80
+```
+
+#### Structure de repertoire
+
+Il est important de bien placer le fichier Dockerfile. Pour cela :
+
+- Accédez à un répertoire de votre choix.
+- Créez un nouveau répertoire qui hebergera le dockerfile (ex : premierDockerfile ).
+- Allez dans le repertoire, et crée un fichier du nom de **Dockerfile** et copier le contenue au dessus.
+- Vous avez pu voir que on copier un dossier html dans l'image, il faudra donc aussi crée ce dossier et ajouter un fichier index.
+
+Normalement, vous aurez donc un fichier premierDockerfile contenant un fichier Dockerfile et un fichier html contenant un fichier index.
+
+Maintenant la structure fait, il faut le créer.
+
+
+#### Créer l'image et lancer le conteneur 
+
+Pour construire l'image décrite dans ke docker file, il faudra utiliser la commande :
+
+`docker build -t <choisir-un-nom-pour-l'image> .`
+
+- `docker build` pour préciser qu'on construit une image.
+- `-t <choisir-un-nom-pour-l'image>` pour donner un nom à l'image.
+- `.` pour le repertoire ou se trouve le fichier Dockerfile (ici, le repertoire courant).
+
+Ensuite, executer avec la commande vue précédemment 
+
+`docker run --name <nom du conteneur de votre choix> -d -p <port hôte>:80 <nom-de-l'image-choisie>`
+
+### Installer un service apache à partir d'une image vierge debian.
+
+L’exemple dockerfile ci-dessus est très simple, puisque l’image httpd est préconfigurée pour lancer un service apache. 
+
+Cependant, pourrait-on configurer une image avec le service apache à partir d’une image debian sur laquelle apache n’est pas installé ? La réponse est oui et nous apprendrons comment dans cette section.
+
+Le Dockerfile suivant permet de lancer un service apache à partie de la derniere version debian sans apache.
+
+```
+# Utiliser l'image debian officielle comme image parent
+FROM debian:latest
+
+# Installer des services et des packages
+RUN  apt-get update && \
+    apt-get -y install  \
+    apache2
+
+# Copier les fichiers de l'hôte vers l'image
+COPY ./html /var/www/html
+
+# Exposer le port 80
+EXPOSE 80
+
+# Lancer le service apache au démarrage du conteneur
+CMD ["/usr/sbin/apache2ctl","-DFOREGROUND"]`
+```
+
