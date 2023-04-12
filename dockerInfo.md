@@ -2,7 +2,7 @@
 
 ## Telecharger Docker
 
-Lorsque vous avez télécharger doker 
+Lorsque vous avez fini d'installer Docker (cela prend du temps)
 
 ## Image
 Une image Docker est un fichier immuable (non modifiable) qui contient le code source, les bibliothèques, les dépendances, les outils et d’autres fichiers nécessaires à l’exécution d’une application. Étant donné que les images ne sont, en quelque sorte, que des modèles, vous ne pouvez pas les démarrer ou les exécuter. Ce que vous pouvez faire, c’est utiliser ce modèle comme base pour créer un conteneur.
