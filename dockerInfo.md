@@ -44,7 +44,7 @@ Pour voir les conteneurs, il faut utiliser soit la commande
 `docker ps    ` pour les conteneur actif
 `docker ps - a` pour tous les conteneur
 
-## TP1
+# TP1
 
 1. Le client a contacter un docker du nom de daemon
 2. Celui-ci à récuperer l'image "Hello world" du docker hub
@@ -144,3 +144,7 @@ Cette commande doit vous faire rappeler la commande vue précédement, la seule 
 - A gauche se trouve le dossier que nous volons partager (pwd permet de renvoyer le fichier ou nous sommes actuellement)
 - A droit se trouve le dossier dans le conteneur (ici, le dossier **/usr/local/apache2/htdocs** gérent les pages webs desservies par le serveur Apache)
 
+Note : Sur windows, il se peut que la commande pwd ne fonctionne pas, à ce moment la remplacer juste $(pwd) par le chemin absolue de voytre fichier html.
+
+
+# TP2
