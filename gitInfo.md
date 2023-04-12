@@ -71,4 +71,4 @@ Si vous voulez merger deux branches, par exemple, main et test, aller tous dabor
 
 ***
 
-Cliquer sur ce **[lien](./index.md)** pour retour à la page d'accueil!
+Cliquer sur ce [**lien**](./index.md) pour retour à la page d'accueil!
