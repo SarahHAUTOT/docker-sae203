@@ -48,7 +48,7 @@ Si vous voulez juste passer à une branche existante sans en créer une nouvelle
 
 ![remarque](https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Exclamation_yellow_flat_icon.svg/240px-Exclamation_yellow_flat_icon.svg.png){: style="float: left; width:6%; height:6%; marging-right: 8px"}
 
-<div style = "border:2px solid yellow; background-color:yellow; font-weight:bold;">Remarque : lorsque vous crée des fichier dans les branches (par exemple la branche nomBranche), ils ne seront pas visible par la branche main.</div>
+**Remarque : lorsque vous crée des fichier dans les branches (par exemple la branche nomBranche), ils ne seront pas visible par la branche main.**
 
 Si vous voulez merger deux branches, par exemple, main et test, aller tous dabord sur la branche main puis tapper la commande : 
 
