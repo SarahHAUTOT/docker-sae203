@@ -33,7 +33,7 @@ Il est parfois nécessaire de copier un dépôt distant dans votre dépôt local
 
 `git clone git@github.com:<nom_de_utilisateur>/<nom_de_dépôt>.git`
 
-[Haut de la page](###GIT)
+[Haut de la page](#GIT)
 
 ***
 
@@ -53,6 +53,6 @@ Si vous voulez merger deux branches, par exemple, main et test, aller tous dabor
 
 `git merge test`
 
-[Haut de la page](###GIT)
+[Haut de la page](#GIT)
 
 ***
