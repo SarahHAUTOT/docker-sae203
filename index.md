@@ -1,4 +1,4 @@
-# SAE 2.03 GROUPE 12
+# SAE 2.03 GROUPE 05
 
 Dans cette SAE, nous verrons comment utiliser GitHub et Docker, mais avant cela , il est important de comprendre ce à quoi ces outils correspondent.
 
