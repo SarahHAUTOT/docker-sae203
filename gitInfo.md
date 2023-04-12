@@ -34,6 +34,7 @@ Il est parfois nécessaire de copier un dépôt distant dans votre dépôt local
 `git clone git@github.com:<nom_de_utilisateur>/<nom_de_dépôt>.git`
 
 [Haut de la page](#GIT)
+
 ***
 
 ## Nouvelles fonctionnalités à l’aide des branches
