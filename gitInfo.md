@@ -17,10 +17,10 @@ Pour obtenir toutes les configurations, nous avons besoin de la commande `git co
 Si vous n'avez jamais utilisé de git avant, vous devrez définir certaines variables vous-même :
 
 1. Votre identité
-  1.1 Utilisez la commande `git config --global user.name "Nom Prenom"` pour assigner votre prénom et votre nom de famille à une variable
-  1.2 Utilisez `git config --global user.email ххх@example.com` pour assigner votre email à la variable
+  1. Utilisez la commande `git config --global user.name "Nom Prenom"` pour assigner votre prénom et votre nom de famille à une variable
+  2. Utilisez `git config --global user.email ххх@example.com` pour assigner votre email à la variable
 2. Votre editeur 
-  2.1 Avec cette commande `git config --global core.editor XXXX` nous configurons notre éditeur de texte par défaut
+  1. Avec cette commande `git config --global core.editor XXXX` nous configurons notre éditeur de texte par défaut
 
 ***
 
