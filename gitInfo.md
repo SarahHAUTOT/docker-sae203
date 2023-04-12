@@ -62,7 +62,7 @@ La commande `git checkout -b <nom_de_branche>` avec le modificateur **-b** nous 
 Si vous voulez juste passer à une branche existante sans en créer une nouvelle, alors la commande `git checkout <nom_de_branche>` fera l'affaire.
 
 
-![remarque](https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Exclamation_yellow_flat_icon.svg/240px-Exclamation_yellow_flat_icon.svg.png){: style="float: left; width:7%; height:7%; margin: 0 5px; "}
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Exclamation_yellow_flat_icon.svg/240px-Exclamation_yellow_flat_icon.svg.png" alt="Remarque!" title="Remarque!" style="float: left; width:7%; height:7%; margin: 0 5px; ">
 
 **Remarque : lorsque vous crée des fichier dans les branches (par exemple la branche nomBranche), ils ne seront pas visible par la branche main.**
 
