@@ -1,4 +1,5 @@
 # SAE 2.03 GROUPE 04
+# MasterMind
 
 Dans cette SAE, nous verrons comment utiliser GitHub et Docker, mais avant cela , il est important de comprendre ce à quoi ces outils correspondent.
 
@@ -23,3 +24,7 @@ Cliquer sur ce [lien](./gitInfo.md) pour savoir comment utiliser Git !
 Comme ça, on utiliser les apllications partout, sans avoir à se soucier de savoir s'ils fonctionneront ou non et donc de ne pas se préocupper des différences entre les oridnateurs.
 
 <div style="text-align: center;"><img src="https://www.docker.com/wp-content/uploads/2022/03/Moby-logo.png" alt="logo GitHub" width="50%" height="50%" align="centre"></div>
+
+## Notre projet
+Dans cette SAE, nous avons donc décidé de reprendre l'idée du MasterMind. Ils nous afflu donc construire plusieur chose :
+- 
