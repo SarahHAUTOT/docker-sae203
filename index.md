@@ -1,5 +1,5 @@
 # SAE 2.03 GROUPE 04
-# MasterMind
+# EchecSolitaire
 
 Dans cette SAE, nous verrons comment utiliser GitHub et Docker, mais avant cela , il est important de comprendre ce à quoi ces outils correspondent.
 
@@ -26,12 +26,9 @@ Comme ça, on utiliser les applications partout, sans avoir à se soucier de sav
 <div style="text-align: center;"><img src="https://www.docker.com/wp-content/uploads/2022/03/Moby-logo.png" alt="logo GitHub" width="50%" height="50%" align="centre"></div>
 
 ## Notre projet
-Dans cette SAE, nous avons donc décidé de reprendre l'idée du MasterMind. Nous avons du donc construire plusieur chose :
-- Un serveur, hébérgeant une partie
-- Un client, qui réjoins cette partie
-- L'[ihm](./projet/ihm.md), pour donner un bon visuelle au jeu
-
-A la fin, nous avons du donc crée aussi un Dockerfile, installant java et compilant (et exécutant) pour faire fonctionner ce jeu, ressemblant au code suivant : 
+Dans cette SAE, nous avons décidé d'installer une application java sur laquelle nous avons travaillé plus tôt dans l'année
+Un jeu de puzzle d'echecs, l'echec Solitaire, le but du jeu est d'utiliser le mouvement des pieces pour ne finir qu'avec une seule pièce, chaque pièce ne peut bien sûr que se déplacer de la façon habituelle avec comme simple contrainte le fait dêtre obligé d'atterir (de manger) une autre pièce lors de son mouvement.
+Donc au travers du Dockerfile, on installe java, on le compile et on l'exécute pour faire fonctionner ce jeu, avec un code ressemblant au suivant : 
 
 ```
 # On commence à la derniere version de debian, et on installe java
