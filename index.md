@@ -30,22 +30,27 @@ Dans cette SAE, nous avons décidé d'installer une application java sur laquell
 Le solitaire chess, ou l'echec Solitaire, est un en semble de puzzle dont le but est d'utiliser le mouvement des pieces pour ne finir qu'avec une seule pièce, chaque pièce ne peut bien sûr que se déplacer de la façon habituelle avec comme simple contrainte le fait dêtre obligé d'atterir (de manger) une autre pièce lors de son mouvement.
 
 
-Donc au travers du Dockerfile, on installe java, on crée une variable d'environnement CLASSPATH puis on copie les fichiers  on le compile et on l'exécute pour faire fonctionner ce jeu, avec le code suivant : 
+Donc au travers du Dockerfile on réalise les étapes suivantes:
 
-```
-FROM debian:latest
+, on installe java, on crée une variable d'environnement CLASSPATH puis on copie les fichiers  on le compile et on l'exécute pour faire fonctionner ce jeu, avec le code suivant : 
+
 
 RUN apt-get update 
 
-# On installe java
+On installe java
+
+```
 RUN apt-get install openjdk-17-jdk -y
 RUN apt-get install openjdk-17-jre -y
+```
 
-# Copier les fichiers
-COPY ./ihmgui.jar ./paquetage_classe
+Copier les fichiers
 
-# On crée une variable d'environnement
-ENV CLASSPATH=/paquetage_classe:/paquetage_classe/ihmgui.jar
+`COPY ./ihmgui.jar ./paquetage_classe`
+
+On crée une variable d'environnement CLASSPATH
+
+`ENV CLASSPATH=/paquetage_classe:/paquetage_classe/ihmgui.jar`
 
 # Copier les fichiers Java avec rsync
 COPY ./EchecSolitaire/*.java /paquetage_java/
@@ -58,6 +63,6 @@ RUN javac  *.java -encoding utf8 -d ./paquetage_classe
 
 # Définir la commande par défaut
 CMD ["java", "-cp", "/paquetage_classe/ihmgui.jar/:/paquetage_classe/", "Main"]
-```
+
 
 Un dockerfile simple, et facile à comprendre.
