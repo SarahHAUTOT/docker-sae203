@@ -1,5 +1,5 @@
 # SAE 2.03 GROUPE 04
-# MasterMind
+# EchecSolitaire
 
 Dans cette SAE, nous verrons comment utiliser GitHub et Docker, mais avant cela , il est important de comprendre ce à quoi ces outils correspondent.
 
@@ -21,35 +21,48 @@ Cliquer sur ce [lien](./gitInfo.md) pour savoir comment utiliser Git !
 
 [Docker](./dockerInfo.md), c'est un peu comme une boîte magique dans laquelle on peut mettre toutes les choses nécessaires pour faire fonctionner une application. Cette boîte aussi appellé conteneur permet de faciliter leur deploiement, et permet de faire fonctionner des applications dans leur environnement.
 
-Comme ça, on utiliser les apllications partout, sans avoir à se soucier de savoir s'ils fonctionneront ou non et donc de ne pas se préocupper des différences entre les oridnateurs.
+Comme ça, on utiliser les applications partout, sans avoir à se soucier de savoir s'ils fonctionneront ou non et donc de ne pas se préocupper des différences entre les ordinateurs.
 
 <div style="text-align: center;"><img src="https://www.docker.com/wp-content/uploads/2022/03/Moby-logo.png" alt="logo GitHub" width="50%" height="50%" align="centre"></div>
 
 ## Notre projet
-Dans cette SAE, nous avons donc décidé de reprendre l'idée du MasterMind. Nous avons du donc construire plusieur chose :
-- Un serveur, hébérgeant une partie
-- Un client, qui réjoins cette partie
-- L'[ihm](./projet/ihm.md), pour donner un bon visuelle au jeu
+Dans cette SAE, nous avons décidé d'installer une application java sur laquelle nous avons travaillé plus tôt dans l'année.
+Le solitaire chess, ou l'echec Solitaire, est un en semble de puzzle dont le but est d'utiliser le mouvement des pieces pour ne finir qu'avec une seule pièce, chaque pièce ne peut bien sûr que se déplacer de la façon habituelle avec comme simple contrainte le fait dêtre obligé d'atterir (de manger) une autre pièce lors de son mouvement.
 
-A la fin, nous avons du donc crée aussi un Dockerfile, installant java et compilant (et exécutant) pour faire fonctionner ce jeu, ressemblant au code suivant : 
 
-```
-# On commence à la derniere version de debian, et on installe java
-FROM debian:latest
+Donc au travers du Dockerfile on réalise les étapes suivantes:
 
-# On met a jour
+, on installe java, on crée une variable d'environnement CLASSPATH puis on copie les fichiers  on le compile et on l'exécute pour faire fonctionner ce jeu, avec le code suivant : 
+
+
 RUN apt-get update 
 
-# On installe java
-RUN apt-get install default-jdk -y
+On installe java
 
-COPY . .
-
-RUN javac Main.java
-
-CMD ["java", "Main"]
-
-EXPOSE 80
 ```
+RUN apt-get install openjdk-17-jdk -y
+RUN apt-get install openjdk-17-jre -y
+```
+
+Copier les fichiers
+
+`COPY ./ihmgui.jar ./paquetage_classe`
+
+On crée une variable d'environnement CLASSPATH
+
+`ENV CLASSPATH=/paquetage_classe:/paquetage_classe/ihmgui.jar`
+
+# Copier les fichiers Java avec rsync
+COPY ./EchecSolitaire/*.java /paquetage_java/
+COPY ./EchecSolitaire/Metier/*.java /paquetage_java/
+COPY ./EchecSolitaire/Metier/Piece/*.java /paquetage_java/
+
+# Compiler le code source
+WORKDIR /paquetage_java
+RUN javac  *.java -encoding utf8 -d ./paquetage_classe 
+
+# Définir la commande par défaut
+CMD ["java", "-cp", "/paquetage_classe/ihmgui.jar/:/paquetage_classe/", "Main"]
+
 
 Un dockerfile simple, et facile à comprendre.
