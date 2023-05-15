@@ -32,3 +32,19 @@ Une fois terminer, tappez la commande suivante :
 
 ``docker run --name <nom_image> -d -p <port-hôte>:80 <nom_image>``
 
+*Note : Il se peut que le port soit déja occupé par votre pc pour autre chose. On vous insite à utiliser le port 8080 pour éviter tous problèmes*
+
+Une fois lancer, démarrer un navigateur de votre choix et tapper dans la barre la ligne suivante :
+``localhost:<port_hôte>``
+
+Et boom, une page apparait vous permettant d'avoir accès à la liste de vos étudiant, des groupes, et de leur passage.
+
+*Info : Il est possible de changer les datas afin de générer des groupes propres à vos demandes. N'hésitez pas à regarder notre site pour plus d'informations sur comment faire.*
+
+Une fois les planning et autre crée, vous pouvez supprimer l'image (afin de libérer votre port) avec la commande :
+
+``docker kill <nom_image>``
+
+et
+
+``docker rm <nom_image>``
