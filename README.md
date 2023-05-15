@@ -1,9 +1,6 @@
 # Planning Sup'
 
-## C'est quoi ?
-Planning sup est une application java permettant la création de groupe et d'emploi du temps rapidement via des fichiers data.
-
-## Comment l'installer ?
+## Comment installer cette image ?
 
 ### Logiciels nécessaire
 Il est important que les logiciels suivant soit présent sur votre machine :
@@ -16,25 +13,25 @@ Mettez vous dans un répértoire de votre choix, puis, tappez la commande suivan
 
 ``git clone git@github.com:Ottirate/docker-sae203.git``
 
-Si vous regardez votre répértoire, vous verrez qu'un dossier **docker-sea203** c'est crée, déplacer vous dedans avec la commande
+Si vous regardez votre répértoire, vous verrez qu'un dossier **docker-sea203** s'est crée, déplacer vous dedans avec la commande
 
 ``cd docker-sae203``
 
 Dedans, vous trouverez le fichier README.md, le fichier DockerFile, et un dossier app.
 
-### Crée et lancer l'image 
-Toujours dans le dossier docker-sae203, exécuter la commande suivante :
+### Créer et lancer l'image 
+Toujours dans le dossier docker-sae203, exécuter la commande suivante (en remplacant <nom_image> par le nom que vous voulez) :
 
-``docker build -it <nom_image> .``
+``docker build -t <nom_image> .``
 
-Cela vous prendra surement un petit moment (le temps que tous s'installe). 
+Cela vous prendra surement un petit moment (le temps que tout s'installe). 
 Une fois terminer, tappez la commande suivante :
 
 ``docker run --name <nom_image> -d -p <port-hôte>:80 <nom_image>``
 
 *Note : Il se peut que le port soit déja occupé par votre pc pour autre chose. On vous insite à utiliser le port 8080 pour éviter tous problèmes*
 
-Une fois lancer, démarrer un navigateur de votre choix et tapper dans la barre la ligne suivante :
+Une fois lancé, démarrer un navigateur de votre choix et tapper dans la barre la ligne suivante :
 
 ``localhost:<port_hôte>``
 
@@ -42,7 +39,7 @@ Et boom, une page apparait vous permettant d'avoir accès à la liste de vos ét
 
 *Info : Il est possible de changer les datas afin de générer des groupes propres à vos demandes. N'hésitez pas à regarder notre site pour plus d'informations sur comment faire.*
 
-Une fois les planning et autre crée, vous pouvez supprimer l'image (afin de libérer votre port) avec la commande :
+Une fois les planning et autre crées, vous pouvez supprimer l'image (afin de libérer votre port) avec la commande :
 
 ``docker kill <nom_image>``
 
