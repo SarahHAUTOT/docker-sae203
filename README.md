@@ -41,7 +41,7 @@ Et boom, une page apparait vous permettant d'avoir accès à la liste de vos ét
 
 Une fois les planning et autre crées, vous pouvez supprimer l'image (afin de libérer votre port) avec la commande :
 
-``docker kill <nom_image>``
+``docker stop <nom_image>``
 
 et
 
