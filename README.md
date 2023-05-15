@@ -35,6 +35,7 @@ Une fois terminer, tappez la commande suivante :
 *Note : Il se peut que le port soit déja occupé par votre pc pour autre chose. On vous insite à utiliser le port 8080 pour éviter tous problèmes*
 
 Une fois lancer, démarrer un navigateur de votre choix et tapper dans la barre la ligne suivante :
+
 ``localhost:<port_hôte>``
 
 Et boom, une page apparait vous permettant d'avoir accès à la liste de vos étudiant, des groupes, et de leur passage.
