@@ -27,5 +27,5 @@ Comme ça, on utiliser les applications partout, sans avoir à se soucier de sav
 
 ## Notre projet
 
-<div style="text-align: center;"><img src="./images/.png" alt="logo GitHub" width="50%" height="50%" align="centre"></div>
+<div style="text-align: center;"><img src="./images/logo.png" alt="logo GitHub" width="50%" height="50%" align="centre"></div>
 Dans cette SAE, nous avons décidé d'installer une application java sur laquelle nous avons travaillé plus tôt dans l'année.
