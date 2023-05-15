@@ -1,0 +1,76 @@
+article
+{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    grid-auto-rows: minmax(800px, auto);
+
+    width : 80%;
+    margin : auto;
+    height : 450px;
+}
+
+header
+{
+    position : absolute;
+    top      : 0px;
+    left     : 0px;
+    background-color: #7ed957;
+    color : white;
+    width  : 100%;
+    text-align: center;
+}
+
+section 
+{
+    position: relative;
+    top     : 80px;
+}
+
+article 
+{
+    
+    margin-bottom: 100px;
+}
+
+th
+{
+    height : 30px;
+    background-color  : #B0B0B0
+}
+
+.prof 
+{
+    height : 90px;
+}
+
+.horaire
+{
+    text-align: right;
+    border : none;
+    height: 15px;
+}
+
+.salleEtGroupe
+{
+    text-align: center;
+    margin-right: 5px;
+}
+
+.salleEtGroupe, .prof
+{
+    font-size: 20px;
+}
+
+
+table, .salleEtGroupe
+{
+    border : 1px solid black;
+}
+
+table
+{
+    height : 520px;
+    width  : 300px;
+    margin-bottom: 20px;
+}

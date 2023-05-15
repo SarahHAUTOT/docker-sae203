@@ -1,0 +1,54 @@
+*   {
+    font-family: arial;
+}
+
+header  {
+    text-align: center;
+    border : 2px solid black;
+    margin : 25px;
+    padding : 0;
+    background-color: #7ed957;
+}
+
+table   {
+    border-spacing: 0;
+    margin: 0;
+    font-size: 1.2vw;
+}
+
+thead, tfoot   {
+    background-color: #333f4e;
+    text-align: left;
+    color : white;
+
+}
+
+td, th, tr  {
+    padding-left: 1em;
+    padding-right: 1em;
+    border : none;
+}
+
+.gris    {
+    background-color: #f2f2f2;
+}
+
+.transparent    {
+    background-color: none;
+}
+
+.droite {
+    text-align : right;
+}
+
+.scroller {
+    height : 80vh;
+    margin:0;
+    margin-right: 5vw;
+    overflow-y : scroll;
+}
+
+article {
+    margin-right: 30vw;
+    margin-left: 30vw;
+}
