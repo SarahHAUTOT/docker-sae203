@@ -1,5 +1,5 @@
 # SAE 2.03 GROUPE 04
-# EchecSolitaire
+# Planning Sup'
 
 Dans cette SAE, nous verrons comment utiliser GitHub et Docker, mais avant cela , il est important de comprendre ce à quoi ces outils correspondent.
 
@@ -11,7 +11,7 @@ Créé en 2008, et appartenant maintenant à Microsoft, GitHub est devenu un out
 
 <div style="text-align: center;"><img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="logo GitHub" width="50%" height="50%" align="centre"></div>
 
-GitHub est une société à but lucratif qui offre un service d’hébergement de référentiel Git basé sur le cloud. Essentiellement, il est beaucoup plus facile pour les individus et les équipes d’utiliser Git pour le contrôle de versions de projets et la facilité collaboration.
+GitHub est une société à but lucratif qui offre un service d’hébergement de référentiel Git basé sur le cloud. Essentiellement, il est beaucoup plus facile pour les individus et les équipes d’utiliser Git pour le contrôle de versions de projets et faciliter la collaboration.
 
 De plus, n’importe qui peut s’inscrire et héberger gratuitement un dépôt de code public, ce qui rend GitHub particulièrement populaire pour y publier des projets open-source.
 
@@ -27,5 +27,14 @@ Comme ça, on utiliser les applications partout, sans avoir à se soucier de sav
 
 ## Notre projet
 
+Dans cette SAE, nous avons décidé d'installer une application java sur laquelle nous avons travaillé.
+
+Nous avons décidé de réutiliser le travail de l'une des premières SAE de l'année.
+Le programme java [Planning Sup'](projectInfo.md) prends un fichier data et crée 4 pages html, la page principale de Planning Sup', "Liste des Etudiants", "Liste des Equipes", "Generateur de planning".
+Chacune de ces pages utilisent le fichier data pour:
+
+-Assigner chaque étudiants en groupe
+-Afficher ces groupes dans leurs équipes de façon + visible 
+-Mettre un créneau horaire et un jury dépendant des possibilités horaires du jury
+
 <div style="text-align: center;"><img src="./images/logo.png" alt="logo GitHub" width="50%" height="50%" align="centre"></div>
-Dans cette SAE, nous avons décidé d'installer une application java sur laquelle nous avons travaillé plus tôt dans l'année.
