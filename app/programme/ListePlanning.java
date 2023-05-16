@@ -7,7 +7,7 @@ public class ListePlanning
     public static void main (Jury[] tabJury)
     {
 
-        String fich ="../Web/Planning.html";
+        String fich ="../web/planning.html";
         /*  Donnees  */
         try
         {

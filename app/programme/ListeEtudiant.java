@@ -7,7 +7,7 @@ public class ListeEtudiant
     public static void main(Etudiant[] tabEtu)
     {
 		/*Nom des fichiers*/
-		final String      PAGE_LISTE_ETUDIANTS  = "../Web/listeEtudiant.html";       //Fichier html
+		final String      PAGE_LISTE_ETUDIANTS  = "../web/listeEtudiant.html";       //Fichier html
 		final String      FICHIER_CSS           = "./style/style.css";       //Fichier css
 
 		/*variables*/

@@ -23,7 +23,7 @@ public class ListeEquipes
         try
         {
 
-            PrintWriter pw = new PrintWriter( new FileOutputStream("../Web/ListeEquipes.html") );
+            PrintWriter pw = new PrintWriter( new FileOutputStream("../web/listeEquipes.html") );
 
             pw.println ( "<!DOCTYPE html>" );
             pw.println ( "<html lang=\"fr\">" );

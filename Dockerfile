@@ -11,7 +11,7 @@ RUN apt-get update &&  \
 # Copier les fichiers de l'hote chez nous
 COPY ./app/programme/*.java ./app/programme/
 COPY ./app/data/*.data ./app/data/
-COPY ./app/Web/* ./app/Web/
+COPY ./app/Web/* ./app/web/
 COPY ./app/Web/image/*.png ./var/www/html/image/
 
 # Copie le .jar et crée la variable CLASSPATH
@@ -24,7 +24,7 @@ RUN javac *.java -d ../rsc/
 RUN java Main.java
 
 # On se met dans le fichier web de l'app pour tous déplacer
-WORKDIR ../Web/
+WORKDIR ../web/
 
 # Déplace les fichiers vers le repertoire var/www/html
 RUN mv *.html ../../var/www/html/
