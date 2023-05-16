@@ -116,6 +116,3 @@ EXPOSE 80
 # On lance le service apache au démarrage du conteneur
 CMD ["/usr/sbin/apache2ctl","-DFOREGROUND"]
 ```
-
-
-### 
