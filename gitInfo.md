@@ -10,7 +10,7 @@ Il permet de stocker et de gérer l'historique des modifications apportées à d
 
 ## Comment démarrer ?
 
-Afin de commencer à utiliser git, nous devons obtenir nos configurations qui contrôlent tous les domaines du fonctionnement et de l'apparence de git. La commande `git config` nous aidera dans cette tâche
+Afin de commencer à utiliser git, nous devons obtenir nos configurations qui contrôlent tout les domaines du fonctionnement et de l'apparence de git. La commande `git config` nous aidera dans cette tâche.
 
 Pour obtenir toutes les configurations, nous avons besoin de la commande `git config --list`
 
@@ -27,10 +27,10 @@ Si vous n'avez jamais utilisé de git avant, vous devrez définir certaines vari
 ## Comment on enregistre nos fichiers ?
 Git fonctionne en enregistrant des "snapshots" de l'état du projet à chaque étape de son évolution. Ces snapshots sont appelés "commit" et contiennent des informations sur les modifications apportées aux fichiers. Git conserve une base de données de ces commits, permettant aux développeurs de suivre l'historique du projet et de revenir à des versions antérieures si nécessaire.
 
-Si vous avez besoin d'enregistré une snapshots, il faut d'abord ajouter les fichier avec la commande : 
+Si vous avez besoin d'enregistrer une snapshots, il faut d'abord ajouter les fichier avec la commande : 
 `git add NomDuFichier`
 
-Ensuite, une fois les fichiers ajoutés, vous pouvez enregistré la snapshots avec la commande : 
+Ensuite, une fois les fichiers ajoutés, vous pouvez enregistrer la snapshots avec la commande : 
 
 `git commit -m "Un petit commentaire pour savoir ce que c'était"`
 
